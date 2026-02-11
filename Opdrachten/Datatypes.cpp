@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 using namespace std;
 
@@ -19,4 +20,10 @@ int main(){
     string p = "Klaar?"; // p = Klaar?
     string s = string("Nee, nog") + string(" niet"); // s = Nee, nog niet
 
+    cout << "x is: " << x << "\n";
+    cout << "e is: " << e << "\n";
+    cout << "a is: " << a << "\n";
+    cout << "c is: " << c << "\n";
+    cout << "u is: " << u << "\n";
+    cout << "s is: " << s << "\n";
 }
