@@ -25,5 +25,21 @@ int main(){
     p.append(" Me Stadsie!"); // p = Utereg Me Stadsie
     string station = string("Heidel") + "berglaan"; // station = Heidelberglaan
     string plaats = station.erase(10, station.size()-10); // plaats = Heid
-    
+
+    cout << "x is: " << x << "\n";
+    cout << "y is: " << y << "\n";
+    cout << "z is: " << z << "\n";
+    cout << "f is: " << f << "\n";
+    cout << "e is: " << e << "\n";
+    cout << "t is: " << t << "\n";
+    cout << "s is: " << s << "\n";
+    cout << "a is: " << a << "\n";
+    cout << "b is: " << b << "\n";
+    cout << "d is: " << d << "\n";
+    cout << "c is: " << c << "\n";
+    cout << "r is: " << r << "\n";
+    cout << "u is: " << u << "\n";
+    cout << "p is: " << p << "\n";
+    cout << "station is: " << station << "\n";
+    cout << "plaats is: " << plaats << "\n";
 }
