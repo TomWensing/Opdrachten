@@ -10,16 +10,41 @@ int main () {
     //cout << "x + 32 = " << int(x + 32) << "\n";
     //cout << "x + 32 = " << char(x + 32) << "\n";
 
-    char p;
+    string input;
+
     cout << "Geef een string om te vertalen: ";
-    cin >> p;
-    cout << p;
+    getline(cin, input);
+
     cout << "1337-speak :\n";
-    if (p > 96) {
-        p = p - 32;
+
+    for (char c : input) {
+        switch (c) {
+            case 'e':
+            case 'E':
+                cout << '3';
+                break;
+            case 'l':
+            case 'L':
+                cout << '1';
+                break;
+            case 't':
+            case 'T':
+                cout << '7';
+                break;
+            case 'o':
+            case 'O':
+                cout << '0';
+                break;
+            default:
+                if (c >= 'a' && c <= 'z') {
+                    cout << char(c - 32); 
+                } else {
+                    cout << c; 
+                }
+                break;
+        }
     }
-    cout << p;
 
-
-
+    cout << endl;
+    return 0;
 }
